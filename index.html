@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <h1 class="heading">Desserts</h1>
+  <section class="container">
     
+    
+    <!-- Product Grid -->
+    <div class="menu">
+      <div class="item">
+        <img src="assets/images/waffles.jpg" alt="Waffle with Berries" >
+        <h3>Waffle with Berries</h3>
+        <p>$6.50</p>
+        <button onclick="addToCart('Waffle with Berries', 6.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/creme-brulee.jpg" alt="Vanilla Bean Crème Brûlée">
+        <h3>Vanilla Bean Crème Brûlée</h3>
+        <p>$7.00</p>
+        <button onclick="addToCart('Vanilla Bean Crème Brûlée', 7.00)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/macaron.jpg" alt="Macaron Mix of Five">
+        <h3>Macaron Mix of Five</h3>
+        <p>$8.00</p>
+        <button onclick="addToCart('Macaron Mix of Five', 8.00)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/classic-tiramisu.jpg" alt="Classic Tiramisu">
+        <h3>Classic Tiramisu</h3>
+        <p>$5.50</p>
+        <button onclick="addToCart('Classic Tiramisu', 5.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/Red-Velvet-Cake.jpg" alt="Red-Velvet-Cake">
+        <h3>Red Velvet Cake</h3>
+        <p>$4.50</p>
+        <button onclick="addToCart('Red Velvet Cake', 4.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/lemon pie.jpg" alt="Lemon Pie">
+        <h3>Lemon Meringue Pie</h3>
+        <p>$5.00</p>
+        <button onclick="addToCart('Lemon Pie', 5.00)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/Saltedcaramelbrownie.jpg" alt="Saltedcaramelbrownie">
+        <h3>Salted Caramel Brownie</h3>
+        <p>$5.50</p>
+        <button onclick="addToCart('Salted Caramel brownie', 5.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/vanilla panna cotta.jpg" alt="Vanilla Panna Cotta">
+        <h3>Vanilla Panna Cotta</h3>
+        <p>$6.50</p>
+        <button onclick="addToCart('Vanilla Panna Cotta', 6.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="assets/images/baklava with pistachio.jpg" alt="baklava with pistachio">
+        <h3>Pistachio Baklava</h3>
+        <p>$4.00</p>
+        <button onclick="addToCart('baklava with pistachio', 4.00)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p><strong>Order Total: $<span id="totalAmount">0.00</span></strong></p>
+      <button onclick="confirmOrder()">Confirm Order</button>
+      <button onclick="startNewOrder()">Start New Order</button>
+    </div>
+  </section>
+  <script src="app.js"></script>
 </body>
 </html>
