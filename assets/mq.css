@@ -1,0 +1,38 @@
+/* for medium devices (tablet) */
+@media (min-width:700px){
+    .menu{
+        width: 90%;
+    }
+    #cart{
+        width: 50%;
+    }
+}
+
+/* for small devices */
+@media (max-width:600px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .menu{
+            justify-content: center;
+        }
+    #cart {
+        width: 300px;
+        height: 86vh;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .modal{
+        display:flex;
+    }
+}
+
+/* for smaller devices */
+@media(max-width:386px){
+    #cart {
+        width: 250px;
+    }
+}

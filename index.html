@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/mq.css">
 </head>
 <body>
   <h1 class="heading">Desserts</h1>
   <section class="container">
     
-    <!-- Product Grid -->
-    <div class="menu">
+    <!-- Product Section -->
+    <section class="menu">
       <div class="item">
         <img src="assets/images/waffles.jpg" alt="Waffle with Berries" >
         <p class="name">Waffle</p>
@@ -109,7 +110,7 @@
           Add to Cart
         </button>
       </div>
-    </div>
+    </section>
 
     <!-- Cart Section -->
     <div id="cart">
@@ -117,7 +118,6 @@
       <ul id="cartItems"></ul>
       <p class="total"><strong>Order Total: $<span id="totalAmount">0.00</span></strong></p>
       <button class="order-button" onclick="confirmOrder()">Confirm Order</button>
-      <!-- <button class="order-button" onclick="startNewOrder()">Start New Order</button> -->
     </div>
 
     <!-- Modal Secttion -->
