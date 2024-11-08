@@ -3,69 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
+    <title>E-commerce</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <h1 class="heading">Desserts</h1>
   <section class="container">
     
-    
     <!-- Product Grid -->
     <div class="menu">
       <div class="item">
         <img src="assets/images/waffles.jpg" alt="Waffle with Berries" >
+        <p class="name">Waffle</p>
         <h3>Waffle with Berries</h3>
-        <p>$6.50</p>
-        <button onclick="addToCart('Waffle with Berries', 6.50)">Add to Cart</button>
+        <p class="price">$6.50</p>
+        <button id="addToCart-Waffle-with-Berries" class="addtocart" onclick="addToCart('Waffle with Berries', 6.50)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
+      
       <div class="item">
         <img src="assets/images/creme-brulee.jpg" alt="Vanilla Bean Crème Brûlée">
+        <p class="name">Crème Brûlée</p>
         <h3>Vanilla Bean Crème Brûlée</h3>
-        <p>$7.00</p>
-        <button onclick="addToCart('Vanilla Bean Crème Brûlée', 7.00)">Add to Cart</button>
+        <p class="price">$7.00</p>
+        <button id="addToCart-Vanilla-Bean-Crème-Brûlée" class="addtocart" onclick="addToCart('Vanilla Bean Crème Brûlée', 7.00)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
+
       <div class="item">
         <img src="assets/images/macaron.jpg" alt="Macaron Mix of Five">
+        <p class="name">Macaron</p>
         <h3>Macaron Mix of Five</h3>
-        <p>$8.00</p>
-        <button onclick="addToCart('Macaron Mix of Five', 8.00)">Add to Cart</button>
+        <p class="price">$8.00</p>
+        <button id="addToCart-Macaron-Mix-of-Five" class="addtocart" onclick="addToCart('Macaron Mix of Five', 8.00)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
+
       <div class="item">
         <img src="assets/images/classic-tiramisu.jpg" alt="Classic Tiramisu">
+        <p class="name">Tiramisu</p>
         <h3>Classic Tiramisu</h3>
-        <p>$5.50</p>
-        <button onclick="addToCart('Classic Tiramisu', 5.50)">Add to Cart</button>
+        <p class="price">$5.50</p>
+        <button id="addToCart-Classic-Tiramisu" class="addtocart" onclick="addToCart('Classic Tiramisu', 5.50)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
+
       <div class="item">
         <img src="assets/images/Red-Velvet-Cake.jpg" alt="Red-Velvet-Cake">
+        <p class="name">Cake</p>
         <h3>Red Velvet Cake</h3>
-        <p>$4.50</p>
-        <button onclick="addToCart('Red Velvet Cake', 4.50)">Add to Cart</button>
+        <p class="price">$4.50</p>
+        <button id="addToCart-Red-Velvet-Cake" class="addtocart" onclick="addToCart('Red Velvet Cake', 4.50)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
+
       <div class="item">
         <img src="assets/images/lemon pie.jpg" alt="Lemon Pie">
+        <p class="name">Pie</p>
         <h3>Lemon Meringue Pie</h3>
-        <p>$5.00</p>
-        <button onclick="addToCart('Lemon Pie', 5.00)">Add to Cart</button>
+        <p class="price">$5.00</p>
+        <button id="addToCart-Lemon-Meringue-Pie" class="addtocart" onclick="addToCart('Lemon Meringue Pie', 5.00)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
+
       <div class="item">
         <img src="assets/images/Saltedcaramelbrownie.jpg" alt="Saltedcaramelbrownie">
+        <p class="name">Brownie</p>
         <h3>Salted Caramel Brownie</h3>
-        <p>$5.50</p>
-        <button onclick="addToCart('Salted Caramel brownie', 5.50)">Add to Cart</button>
+        <p class="price">$5.50</p>
+        <button id="addToCart-Salted-Caramel-Brownie" class="addtocart" onclick="addToCart('Salted Caramel Brownie', 5.50)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
       <div class="item">
         <img src="assets/images/vanilla panna cotta.jpg" alt="Vanilla Panna Cotta">
+        <p class="name">Panna Cotta</p>
         <h3>Vanilla Panna Cotta</h3>
-        <p>$6.50</p>
-        <button onclick="addToCart('Vanilla Panna Cotta', 6.50)">Add to Cart</button>
+        <p class="price">$6.50</p>
+        <button id="addToCart-Vanilla-Panna-Cotta" class="addtocart" onclick="addToCart('Vanilla Panna Cotta', 6.50)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          Add to Cart
+        </button>
       </div>
       <div class="item">
         <img src="assets/images/baklava with pistachio.jpg" alt="baklava with pistachio">
+        <p class="name">Baklava</p>
         <h3>Pistachio Baklava</h3>
-        <p>$4.00</p>
-        <button onclick="addToCart('baklava with pistachio', 4.00)">Add to Cart</button>
+        <p class="price">$4.00</p>
+        <button id="addToCart-Pistachio-Baklava" class="addtocart" onclick="addToCart('Pistachio Baklava', 4.00)">
+          <img class="cartimage" src="assets/images/add-to-cart.png">
+          <!-- <span class="icon">&#128722;</span> -->
+          Add to Cart
+        </button>
       </div>
     </div>
 
@@ -73,11 +115,21 @@
     <div id="cart">
       <h2>Your Cart</h2>
       <ul id="cartItems"></ul>
-      <p><strong>Order Total: $<span id="totalAmount">0.00</span></strong></p>
-      <button onclick="confirmOrder()">Confirm Order</button>
-      <button onclick="startNewOrder()">Start New Order</button>
+      <p class="total"><strong>Order Total: $<span id="totalAmount">0.00</span></strong></p>
+      <button class="order-button" onclick="confirmOrder()">Confirm Order</button>
+      <!-- <button class="order-button" onclick="startNewOrder()">Start New Order</button> -->
+    </div>
+
+    <!-- Modal Secttion -->
+    <div id="confirmationModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+        <button class="order-button" onclick="startNewOrder()">Start New Order</button>
+      </div>
     </div>
   </section>
-  <script src="app.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
