@@ -32,7 +32,9 @@
   }
 
   .modal {
-    display: flex;
+    left: 70px;
+    min-width: 50%;
+    /* display: flex; */
   }
 }
 
