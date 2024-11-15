@@ -1,38 +1,44 @@
 /* for medium devices (tablet) */
-@media (min-width:700px){
-    .menu{
-        width: 90%;
-    }
-    #cart{
-        width: 50%;
-    }
+@media (min-width: 700px) {
+  .menu {
+    width: 90%;
+  }
+  #cart {
+    width: 50%;
+  }
+  .modal {
+    left: 250px;
+  }
+  .cart-item span {
+    max-width: 130px;
+  }
 }
 
 /* for small devices */
-@media (max-width:600px){
-    .container{
-        flex-direction: column;
-        justify-content: center;
-    }
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-        .menu{
-            justify-content: center;
-        }
-    #cart {
-        width: 300px;
-        height: 86vh;
-        margin: auto;
-        justify-content: center;
-    }
+  .menu {
+    justify-content: center;
+  }
+  #cart {
+    width: 300px;
+    height: 86vh;
+    margin: auto;
+    justify-content: center;
+  }
 
-    .modal{
-        display:flex;
-    }
+  .modal {
+    display: flex;
+  }
 }
 
 /* for smaller devices */
-@media(max-width:386px){
-    #cart {
-        width: 250px;
-    }
+@media (max-width: 386px) {
+  #cart {
+    width: 250px;
+  }
 }
