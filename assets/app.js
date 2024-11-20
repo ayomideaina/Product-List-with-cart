@@ -26,11 +26,16 @@ function updateButtonText(itemName) {
     button.innerHTML = `
         <div class="quantity">
             <span class="minus" onclick="decreaseQuantity('${itemName}')">-</span>
-            ${cart[itemName].quantity}
+            <span class='itemQty'>${cart[itemName].quantity}</span>
             <span class="plus" onclick="increaseQuantity('${itemName}')">+</span>
         </div>
         `;
+    button.onclick = null;
   } else {
+    const itemDiv = button.closest('div.item');
+    const priceP = itemDiv.querySelector('p.price');
+    const itemPrice = parseFloat(priceP.textContent.replace('$', ''));
+    button.onclick = () => addToCart(itemName, itemPrice);
     button.innerHTML = `
             <img class="cartimage" src="assets/images/add-to-cart.png" alt="Add to Cart Icon">
             Add to Cart
