@@ -23,6 +23,7 @@ body {
   padding: 20px;
   margin: 20px;
 }
+
 /* Product section */
 .menu {
   display: flex;
@@ -59,6 +60,7 @@ body {
   margin: 10px 0;
   font-weight: bold;
 }
+
 .addtocart {
   display: inline-flex;
   align-items: center;
@@ -74,10 +76,12 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .addtocart img {
   width: 20px;
   height: 20px;
 }
+
 .addtocart:hover,
 .addtocart:focus {
   background-color: #e4634a;
@@ -89,6 +93,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   width: 80%;
 }
+
 .cart-content {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
@@ -123,7 +128,9 @@ body {
 }
 
 .quantity {
-  padding: 0px 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .total {
@@ -163,6 +170,7 @@ body {
 .modal-content p {
   margin: 10px 0;
 }
+
 .close-button {
   float: right;
   font-size: 20px;
@@ -170,7 +178,10 @@ body {
 }
 
 .quantity .minus,
-.quantity .plus {
+.quantity .plus,
+.quantity .itemQty {
+  padding-left: 13px;
+  padding-right: 13px;
   cursor: pointer;
-  width: 20px;
+  display: inline-block;
 }
